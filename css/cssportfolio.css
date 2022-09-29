@@ -1,0 +1,648 @@
+
+        /* FORMATAÇÃO BÁSICA DA PÁGINA */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+
+    background-color: #131313;
+    grid-area: h;
+    border-top: dashed springgreen 4px;
+    border-bottom: dashed black 4px;
+}
+
+main {
+
+    background-color: #131313;
+    grid-area: m;
+}
+
+footer {
+
+    background-color: #131313;
+    grid-area: f;
+    border-top: dashed black 2px;
+
+}
+        /* FIM FORMATAÇÃO BÁSICA DA PÁGINA */
+
+
+
+
+        /* PÁGINA HOME PORTFÓLIO / BARRA DE NAVEGAÇÃO*/
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 11vh 81vh 8vh;
+    grid-template-areas:
+        "h"
+        "m"
+        "f";
+}
+
+.spanavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    font-family: 'bebas', times, serif;
+    font-size: 28px;
+    margin: -13px 135px 0px 85px;
+    padding: 0px 1px 0px 0px;
+}
+
+.spanavbar>img {
+    display: flex;
+    align-self: center;
+    width: 90px;
+    height: 80px;
+    margin-top: -4px;
+    padding: 0;
+}
+
+.logorayan:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: springgreen;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../css/bebaswoff.woff') format('woff');
+
+}
+
+.home {
+    color: whitesmoke;
+}
+
+.eu {
+    color: springgreen;
+}
+
+.fale-comigo {
+    color: springgreen;
+}
+
+.projetos {
+    color: whitesmoke;
+}
+
+
+
+.home:hover {
+
+    color: springgreen;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.eu:hover {
+
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.fale-comigo:hover {
+
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.projetos:hover {
+
+    color: springgreen;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.divfotomemoji {
+    position: absolute;
+    left: 280px;
+    right: 420px;
+    top: 125px;
+    height: 320px;
+    width: 280px;
+
+
+}
+
+.divfotomemoji>img {
+    height: 360px;
+    width: 360px;
+}
+
+.ultextorayan {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 580px;
+    right: 420px;
+    top: 130px;
+    line-height: 28px;
+    height: 300px;
+    width: 450px;
+
+
+}
+
+li {
+    list-style: none;
+}
+
+.hello {
+    margin-top: 40px;
+    margin-right: 230px;
+    font-family: 'Nuosu SIL', serif;
+    color: springgreen;
+    font-size: 90px;
+    line-height: 25px;
+
+}
+
+.myname {
+
+    color: springgreen;
+    word-spacing: 8px;
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: -50px;
+}
+
+.developer {
+    font-size: 35px;
+    font-family: 'Silkscreen', 'cursive';
+    color: springgreen;
+    margin-top: 20px;
+    margin-left: -120px;
+
+}
+        /* FIM PÁGINA HOME PORTFÓLIO/ BARRA DE NAVEGAÇÃO*/
+
+
+
+
+        /* QUADRADOS BACKOUND DAS PÁGINAS */
+.quadradovermelho {
+    position: absolute;
+    left: 550px;
+    right: 420px;
+    top: 500px;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(196, 39, 39, 0.418);
+    border-radius: 50%;
+}
+
+.quadradolaranja {
+    position: absolute;
+    left: 1270px;
+    right: 420px;
+    top: 550px;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 68, 0, 0.103)
+}
+
+.quadradoazul {
+    position: absolute;
+    left: 100px;
+    right: 420px;
+    top: 240px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(26, 10, 255, 0.116);
+}
+
+
+.quadradomagenta {
+    position: absolute;
+    left: 150px;
+    right: 420px;
+    top: 570px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 0, 255, 0.103)
+}
+
+.triangulo {
+    position: absolute;
+    left: 780px;
+    right: 420px;
+    top: 120px;
+    height: 2px;
+    width: 2px;
+    border-top: 0px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(255, 81, 0, 0.144);
+    border-left: 20px solid transparent;
+}
+
+.quadradoamarelo {
+    position: absolute;
+    left: 1100px;
+    right: 420px;
+    top: 140px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(230, 255, 10, 0.212);
+}
+
+
+.quadradoverde {
+    position: absolute;
+    left: 210px;
+    right: 420px;
+    top: 140px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(60, 255, 0, 0.199);
+}
+
+.triangulo {
+    position: absolute;
+    left: 940px;
+    right: 420px;
+    top: 350px;
+    height: 2px;
+    width: 2px;
+    border-top: 0px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(0, 255, 128, 0.158);
+    border-left: 20px solid transparent;
+}
+        /* FIM QUADRADOS BACKOUND DAS PÁGINAS */
+
+
+
+
+        /* PÁGINA SOBRE MIM */
+.fotosobremim {
+    position: absolute;
+    left: 210px;
+    right: 420px;
+    top: 160px;
+    height: 340px;
+    width: 350px;
+    background-color: rgba(0, 255, 128, 0.212);
+    border-radius: 50%;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.fotosobremim>img {
+    height: 330px;
+    width: 340px;
+    border-radius: 50%;
+    padding: 5px 10px 5px 5px;
+
+}
+
+.fotosobremim:hover {
+    background-color: springgreen;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.conteudosobremim:hover {
+    transition: 2s;
+    background-color: springgreen;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
+.sobremim {
+    position: absolute;
+    left: 720px;
+    right: 420px;
+    top: 50px;
+    height: 100px;
+    width: 200px;
+}
+
+.lisobremim {
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    height: 10px;
+    width: 200px;
+    font-size: 50px;
+    font-family: 'bebas', times, serif;
+    color: whitesmoke;
+}
+
+.textosobremim {
+    position: absolute;
+    left: 55%;
+    right: 50%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    height: 220px;
+    width: 500px;
+    font-size: 34px;
+    color: whitesmoke;
+
+}
+
+.hobbies {
+    display: flex;
+
+    position: absolute;
+    left: 800px;
+    right: 420px;
+    top: 400px;
+
+}
+
+.hobbiessobremim {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'bebas', times, serif;
+    color: whitesmoke;
+
+}
+
+.logoshobbies {
+    position: absolute;
+    left: 52%;
+    right: 29%;
+    top: 70%;
+
+}
+
+.fotoshobbies {
+    width: 60px;
+    height: 60px;
+}
+        /* FIM PÁGINA SOBRE MIM */
+
+
+
+
+        /* PÁGINA PROJETOS */
+.caixaloading1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    border: solid 4px springgreen;
+    position: absolute;
+    left: 8%;
+    right: 29%;
+    top: 30%;
+}
+
+
+
+.caixaloading2 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    border: solid 4px springgreen;
+    position: absolute;
+    left: 30%;
+    right: 29%;
+    top: 30%;
+}
+
+.caixaloading3 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    border: solid 4px springgreen;
+    position: absolute;
+    left: 52%;
+    right: 29%;
+    top: 30%;
+}
+
+.caixaloading4 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    border: solid 4px springgreen;
+    position: absolute;
+    left: 74%;
+    right: 29%;
+    top: 30%;
+}
+
+
+.textodacaixaprojeto{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 11%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'bebas', times, serif;
+    color: whitesmoke;
+}
+
+.loading{
+    animation:  is-rotating 1s infinite;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: springgreen;
+    border-radius: 50%;
+}
+
+.textodacaixaprojetoemunah{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'bebas', times, serif;
+    color: whitesmoke;
+}
+
+
+.textodacaixaprojetoemunah:hover{
+    transform: scale(1.1);
+    transition: all 2s ease;
+    color: springgreen;
+}
+        /* FIM PÁGINA PROJETOS */
+
+
+
+
+        /* FORMULÁRIO DE CONTATO PÁGINA FALE-COMIGO */
+.formularioContato { 
+    max-width: 320px; 
+    height:auto; 
+    float:none; 
+    padding:1em; 
+    margin-top: 0%; 
+    margin-left: 12%; 
+    border-radius: 5%; 
+    background:#131313; 
+    position:absolute; 
+    border: solid springgreen 4px;
+    
+}
+
+.formularioContato label  { 
+    float:left; 
+    width:100%; 
+    margin-bottom:1.2em; 
+}
+.formularioContato label span {
+    width: 100%;
+    float: left;
+    margin-bottom: 6px;
+    font-family: 'bebas', times, serif; 
+    color: whitesmoke
+}
+.formularioContato label input  { 
+    font-size:20px; 
+    font-family: 'bebas', times, serif;
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+}
+.formularioContato label select { 
+    font-size:20px; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+}
+.formularioContato label textarea { 
+    font-size:20px; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+}
+
+
+.formularioContato button.btn-envia { 
+    background-color:springgreen; 
+    width:100%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+}
+.formularioContato button.btn-envia:hover { 
+    background-color:rgb(51, 51, 51); 
+}
+        /* FIM FORMULÁRIO DE CONTATO PÁGINA FALE-COMIGO */
+
+
+
+
+        /* REDES PÁGINA FALE-COMIGO */ 
+
+
+#foto-github {
+    position: absolute;
+    left: 50%;
+    right: 30%;
+    top: 30%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+#foto-linkedin {
+    position: absolute;
+    left: 62%;
+    right: 30%;
+    top: 30%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+
+}
+#foto-instagram {
+    position: absolute;
+    left: 74%;
+    right: 30%;
+    top: 30%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+.hover-logos-pagina-sobremim:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: springgreen;
+}
+        /* FIM PARTE REDES PÁGINA FALE-COMIGO */ 
+
+
+        /* ANIMAÇÃO LOADING PÁGINA PROJETOS */ 
+@keyframes is-rotating {
+ to {
+transform: rotate( 1turn )
+        

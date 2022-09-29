@@ -1,0 +1,319 @@
+
+/* formatação dos componentes principais */
+ul, li, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* formatação da tag A: Limpa decoração */
+a{
+    text-decoration: none;
+}
+
+/* formatação do header
+display flex: aciona flex box, deixa elementos espaçados  no eixo horizontal, prontos para formatar
+padding: espaçar um pouco o conteúdo de si mesmo,  aumentando a tela
+align items: alinha os elementos no eixo y
+border: inset - efeito de borda
+border: outset - efeito de borda
+ background-image: - imagem de fundo do header/nav, espaço delimitado pelo height, caminho apenas nome do arquivo
+*/
+header{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    height: 35px;
+    background-color: #131313;
+    border-top: dashed springgreen 4px;
+    border-bottom: dashed black 4px;
+}
+
+/*Background color: pinta o fundo da tela  */
+body{
+    background-color: #131313;
+    
+}
+/*largura da img
+distancia da imagem par a borda, e distância de uma img para outra */
+img{
+    width: 60px;
+    max-width: 100%;
+    display: block;
+}
+
+/* <!--TEXTO--> */
+.home{  
+    font-family: 'bebas', times, serif;
+    font-size: 28px;
+    color: whitesmoke;
+    list-style: none;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+/* <!--LOGO DIREITA--> */
+.logohtml{
+
+    color: whitesmoke;
+    list-style: none;
+}
+ /* transition: velocidade de duração do efeito passado
+ filter: comando para efeitos em css
+ drop shadow: efeito de sombra*
+ 
+   font-family: 'bebas', times, serif;
+    font-size: 28px;
+    color: whitesmoke;
+    list-style: none;
+}/ */
+.home:hover{
+    color: springgreen;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+.logohtml:hover{
+    transform: scale(1.1); 
+    transition: all 0.5s ease;
+    filter: drop-shadow springgreen;  
+}
+
+
+/* Fonte importada do google */
+@font-face {
+    font-family: 'bebas' ;
+    src: url('../css/bebaswoff.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'coves' ;
+    src: url('../css/covesbold.otf') format('otf');
+    
+}
+
+/*display: flex; - trasnforma em uma caixa flexivel 
+ flex-direction: row; - deixa os itens direcionados em linha
+ margin-left: espaçamento da margem esquerda para direita
+ gap: espaçamento entre linhas 
+ text-decoration: linha abaixo do texto( tirei o código mas deixei a definição
+ text-shadow: sombra do texto*/
+.ul-nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 275px;
+    height: 200px;
+    gap: 65px;
+    text-shadow:0px 1px 3px black;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+ 
+    
+}
+/* Li-Texto: Classe onde estão os textos 
+font-family: fonte do texto
+font-size: tamanho da fonte
+color: cor da fonte*/
+
+.texthome{
+    font-family: 'bebas', times, serif;
+    font-size: 25px;
+    color: whitesmoke;
+    list-style: none;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+.text1{
+    font-family: 'bebas', times, serif;
+    font-size: 25px;
+    color: springgreen;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.text2{
+    font-family: 'bebas', times, serif;
+    font-size: 25px;
+    color: whitesmoke;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.text3{
+    font-family: 'bebas', times, serif;
+    font-size: 25px;
+    color: springgreen;
+    list-style: none;
+    margin-left: 5px;
+}
+
+/*HOVER PARA CLASSE LI TEXTO:
+cursor:  cursor permite que o estilo do cursor do mouse seja modificado por algum outro modelo padrão ou até mesmo uma imagem personalizada, exemplo: pointer>algo clicável .
+ */
+.text1:hover{
+
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+.text2:hover{
+
+    color: springgreen;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+.text3:hover{
+
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+.texthome:hover{
+
+    color: springgreenx;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+
+/* FORMATAÇÃO DO MEMOJI */
+.memoji{
+    width: 300px;
+    height: 300px;
+    margin-top: 90px;
+    margin-left: 300px;
+    cursor: pointer;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+
+.memoji:hover{
+    /* visibility:hidden;
+    transition: 2s; */
+    cursor: pointer;
+}
+
+
+.ul-textomemoji{
+    color: whitesmoke;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px;
+    margin-top: 90px;
+    line-height: 33px;
+}
+
+.section1{
+    display: flex;
+}
+
+.ola{
+    font-size: 70px;
+    font-family: 'coves', times, serif;
+    color: springgreen
+    
+}
+
+.rayan{
+    font-family: 'coves', times, serif;
+    font-size: 45px;
+}
+
+.developer{
+    font-family: 'coves', times, serif;
+    font-size: 25px;
+    word-spacing: 8px;
+    color: springgreen;
+    padding-left: 50px;
+}
+
+
+
+/* <div class="container">
+<header></header>
+<main></main>
+<footer>
+    <div class="final">
+        <p>
+            Todos os direitos reservados © Rayan Barbosa
+        </p>
+    </div>
+</footer> */
+
+
+/* 
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #131313;
+}
+
+li{
+    text-decoration: none;
+    list-style: none
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 82vh 10vh;
+}
+
+header{
+    border-top: dashed springgreen 4px;
+    border-bottom: dashed black 4px;
+    
+}
+
+
+main{
+
+}
+
+ul{
+    background: red;
+    display: grid;
+    justify-content: space-between;
+}
+
+
+footer{
+    background-color: aquamarine;
+ 
+ }
+
+
+.final{
+    margin: 0px 0px 0px 980px;
+    width: 350px;
+    font-size: 18px
+}
+
+main{
+
+}
+
+footer{
+   background-color: aquamarine;
+
+} */
+
+
+
