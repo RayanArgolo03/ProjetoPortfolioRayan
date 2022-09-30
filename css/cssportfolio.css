@@ -1,5 +1,5 @@
 
-        /* FORMATAÇÃO BÁSICA DA PÁGINA */
+        /* FORMATAÇÃO BÁSICA DA PÁGINA + GRID LAYOUT */
 body {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ footer {
 
 
         /* PÁGINA HOME PORTFÓLIO / BARRA DE NAVEGAÇÃO*/
-.container {
+.container{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 11vh 81vh 8vh;
